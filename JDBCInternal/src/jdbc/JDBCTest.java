@@ -7,7 +7,8 @@ boolean execute(String SQLQuery);
 interface MyConnection {
 MyStatement createMyStatement();
 }
-	class MyDriverManager{
+	
+class MyDriverManager{
 		static MyConnection getConnection(String type) {
 			if(type.equals("My SQL")) {
 				return new MySQLConnection();
